@@ -1,10 +1,6 @@
 # Awesome-Endpoint-Security-Sensor-Agent
 
-# Awesome-Endpoint-Security-Sensor-Agent
-
 **Top Endpoint Security Sensor Agent (Opensource) 🌟 Star if you like it! 🌟**
-
-
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 
@@ -12,192 +8,103 @@
 
 **Last updated: November 2026**
 
-
-
 This repository tracks notable **SaaS platforms** and **open-source projects** for **Endpoint Security Sensor & Agent**. These tools are the software installed on endpoints—laptops, servers, and cloud workloads—that collect telemetry, detect threats, and enforce policy. The category spans full EDR agents with kernel drivers to lightweight telemetry shippers, and the open-source landscape offers viable alternatives for teams wanting control over their sensor code and data pipeline.
-
-
 
 **Examples** include CrowdStrike Falcon Agent, SentinelOne Agent, Microsoft Defender for Endpoint, Carbon Black Sensor, Tanium Client, Trellix Agent, Sophos Agent, Datadog Agent, Cybereason Sensor, and Elastic Agent (the category leaders in commercial space).
 
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted endpoint sensors, telemetry collection, and open agent infrastructure. **Critical note**: Open-source endpoint agents fall into two camps—**security-focused agents** (Wazuh, Velociraptor, OpenEDR) that detect and respond to threats, and **observability-focused agents** (Elastic Agent, Grafana Alloy, OpenTelemetry Collector) that ship telemetry for monitoring. Neither category fully replaces a commercial EDR agent's kernel-level prevention, but for detection, compliance, and telemetry, the open-source options are production-proven.
-
-
+**Open-source emphasis**: This section is expanded with every relevant project for self-hosted endpoint sensors, telemetry collection, and open agent infrastructure. **Critical note**: Open-source endpoint agents fall into two camps—**security-focused agents** (Wazuh, Velociraptor, OpenEDR, Falco, OSSEC) that detect and respond to threats, and **observability-focused agents** (Elastic Agent, Grafana Alloy, OpenTelemetry Collector) that ship telemetry for monitoring. Neither category fully replaces a commercial EDR agent's kernel-level prevention, but for detection, compliance, and telemetry, the open-source options are production-proven.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
-
-
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **CrowdStrike Falcon Agent**
-
-  **Lightweight endpoint sensor** with kernel-level visibility and threat graph. **Pricing**: **Falcon Go $59.99/device/month** (billed annually, 100-device max); **Pro $99.99/device/month**; **Enterprise $184.99/device/month** . **Free tier**: Falcon Go includes core EDR for up to 100 devices. **Best for**: enterprises wanting the most mature detection with minimal agent footprint—**trade-off**: premium pricing; per-device costs scale with fleet size. **Supported OS**: Windows (including legacy XP/2003 via Falcon for Legacy Systems), Linux (RHEL, Ubuntu, SLES, Amazon Linux, ARM64), macOS (Sonoma through Golden Gate 27), ChromeOS (agentless, event ingestion) .
-
-
-
-- **SentinelOne Agent**
-
-  **Autonomous EDR agent** with AI-driven prevention and response. **Pricing**: **Singularity Complete $179.99/endpoint/year** (AI-driven endpoint and cloud workload protection, 14-day data retention); **Commercial $229.99/endpoint/year** (adds identity detection, 90-day retention, managed threat hunting); **Enterprise** quote-only . **Free tier**: None. **Best for**: organizations wanting autonomous response—**trade-off**: agent resource usage varies by workload. **Supported OS**: Windows (Server 2012 R2 through 2025, Windows 10/11 including 365), Linux (RHEL, Ubuntu, Debian, SLES, Amazon Linux, ARM64 Graviton), macOS .
-
-
-
-- **Microsoft Defender for Endpoint**
-
-  **EDR agent** integrated with Microsoft 365 and Defender XDR. **Pricing**: **Plan 1** included in M365 E3; **Plan 2** included in M365 E5 or via **E5 Security add-on $12/user/month list** (median negotiated $8–$10, top quartile $6–$8) . **Free tier**: Limited trial. **Best for**: Microsoft-centric organizations wanting native integration—**trade-off**: persona-based licensing is complex; flat Plan 2 coverage is a common overspend . **Supported OS**: Windows, macOS, Linux (server-focused), Android, iOS.
-
-
-
-- **Carbon Black Sensor** (Broadcom)
-
-  **Enterprise EDR sensor** with behavioral detection. **Pricing**: Quote-only; **3-year commitments** preferred with **5–10% additional discount** . **Free tier**: None. **Best for**: organizations with existing Broadcom relationships—**trade-off**: **42% of 2024–2026 renewals resulted in partial or full migration**; 3-year license totals frequently **25–40% higher** than Falcon, SentinelOne, or Defender at equivalent scope . **Supported OS**: Windows, macOS, Linux.
-
-
-
-- **Tanium Client**
-
-  **Unified endpoint management and security agent** with real-time visibility. **Pricing**: **Microsoft Marketplace: $12,000/month for 1,500 endpoints** ($144,000/year) for Tanium Core Plus, Endpoint Management Plus, Risk & Compliance Plus, and Incident Response . **Free tier**: None. **Best for**: large enterprises wanting a single agent for management and security—**trade-off**: six-figure entry for modest fleets; annual subscription. **Supported OS**: Windows, macOS, Linux .
-
-
-
-- **Trellix Endpoint Security Agent**
-
-  **Enterprise endpoint security agent** (formerly McAfee/FireEye). **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises with existing Trellix investments.
-
-
-
-- **Sophos Endpoint Agent**
-
-  **Endpoint protection agent** with Intercept X. **Pricing**: Quote-only. **Free tier**: Trial available. **Best for**: mid-market organizations wanting integrated endpoint security.
-
-
-
-- **Datadog Agent**
-
-  **Observability agent** for metrics, logs, and traces. **Pricing**: Consumption-based; no per-agent fee. **Free tier**: Limited. **Best for**: teams wanting telemetry alongside security—**trade-off**: not a security agent; no threat detection. **Supported OS**: Linux, Windows, macOS .
-
-
-
-- **Cybereason Sensor**
-
-  **EDR sensor** with behavioral detection. **Pricing**: Quote-only. **Free tier**: None. **Best for**: SOC teams wanting MITRE ATT&CK coverage.
-
-
-
-- **Elastic Agent**
-
-  **Unified telemetry shipper** for Elastic Security and Observability. **Pricing**: Free (open source); Elastic Cloud consumption-based. **Free tier**: Yes, self-managed. **Best for**: teams wanting a single agent for logs, metrics, and security data—**trade-off**: not a prevention agent; detection relies on SIEM rules. **Supported OS**: Linux (x86_64, aarch64), Windows, macOS .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **Wazuh Agent**
-
-  **Open-source security agent** (GPLv2) — **the most complete open-source endpoint security agent**, part of the Wazuh SIEM/EDR platform. **Features**: **File integrity monitoring** (FIM); **log analysis** and **rootkit detection**; **vulnerability detection**; **security configuration assessment** (CIS, PCI DSS, HIPAA, NIST); **active response**—firewall-drop, host-deny, disable-account; **MITRE ATT&CK mapping**; container security for Docker and Kubernetes. **Tech stack**: C, Python. **Deploy**: Self-hosted (agent on endpoints, manager server). **Trade-off**: **No kernel-level prevention**—detection is log-based; requires manager infrastructure. **Best for**: organizations wanting a free, comprehensive endpoint agent with compliance mapping—especially those already running Wazuh SIEM.
-
-
-
-- **Velociraptor Agent**
-
-  **Endpoint visibility and DFIR agent** (Apache 2.0) — **the most powerful open-source agent for threat hunting and forensics at scale**. **Features**: **VQL (Velociraptor Query Language)** for interrogating endpoints; **real-time monitoring** for process execution, network connections, and bash instrumentation; **hunts across thousands of endpoints** in minutes; **offline collectors** for field forensics; **low resource consumption**. **Tech stack**: Go. **Deploy**: Self-hosted (server + agents). **Trade-off**: **Not continuous EDR**—no real-time prevention; requires VQL expertise. **Best for**: DFIR teams and threat hunters wanting deep endpoint interrogation without commercial EDR licensing.
-
-
-
-- **OpenEDR Agent**
-
-  **Open-source EDR agent** (open source, Xcitium) — **the most dedicated open-source EDR codebase**. **Features**: **Analytic detection with MITRE ATT&CK visibility**; event correlation and root cause analysis; real-time detection; **fully open source**—inspect, audit, and improve. **Tech stack**: Per repository. **Deploy**: Self-hosted. **Trade-off**: **Limited independent validation**—claims are vendor-reported; smaller community than Wazuh or Velociraptor. **Best for**: organizations wanting a dedicated open-source EDR agent to evaluate or contribute to.
-
-
-
-- **Elastic Agent (Open Source)**
-
-  **Unified telemetry shipper** (Elastic License 2.0/SSPL) — **the most capable open-source observability agent**, usable for security telemetry collection. **Features**: **Single agent for logs, metrics, and traces**; **Elastic Defend** integration for endpoint protection (paid tier); **OpenTelemetry Collector binary included**; **fleet management** for centralized policy. **Tech stack**: Go. **Deploy**: Self-hosted or Elastic Cloud. **Trade-off**: **Source-available, not OSI open source**—Elastic License 2.0/SSPL restrictions apply; **Elastic Defend** requires paid tier. **Best for**: teams already on Elastic Stack wanting a single agent for observability and security data.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Grafana Alloy** — OpenTelemetry Collector distribution (Apache 2.0). Vendor-neutral telemetry agent for metrics, logs, and traces. **Note**: **Observability agent, not security**—no threat detection. **Best for**: teams wanting a vendor-neutral telemetry shipper.
-
-- **OpenTelemetry Collector** — Vendor-neutral telemetry pipeline (Apache 2.0). The standard for collecting and exporting telemetry. **Note**: **Building block, not a security agent**—you configure receivers, processors, and exporters. **Best for**: organizations building custom telemetry pipelines.
-
-- **OSQuery** — SQL-powered endpoint visibility agent (Apache 2.0). Query endpoints like a database for compliance and threat hunting. **Note**: **Visibility only**—no prevention or real-time detection. **Best for**: security teams wanting SQL-based endpoint interrogation.
-
-
-
-**Frameworks for building custom systems**: Combine **Wazuh Agent** for detection and compliance with **Velociraptor Agent** for DFIR and hunting, and **OpenTelemetry Collector** for telemetry shipping—creating a layered open-source endpoint agent stack. **None of these match CrowdStrike's kernel-level prevention or SentinelOne's autonomous response**, but for detection, investigation, and telemetry, the options are production-capable.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Endpoint agents handling system telemetry must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls for collected data.
-
-- **The "prevention agent" vs. "detection agent" vs. "telemetry shipper" distinction is critical.** **CrowdStrike, SentinelOne, Defender, and Carbon Black** are **prevention agents**—they block threats at the kernel level . **Wazuh, OpenEDR, and Velociraptor** are **detection/investigation agents**—they collect and analyze, but do not prevent execution . **Datadog Agent, Elastic Agent, Grafana Alloy, and OpenTelemetry Collector** are **telemetry shippers**—they collect observability data, not security events . **Choose based on whether you need prevention, detection, or observability.**
-
-- **Carbon Black's migration risk is material.** 42% of 2024–2026 renewals resulted in partial or full migration; 3-year license totals are 25–40% higher than competitors . **If evaluating Carbon Black, run an RFP with credible alternatives—even staying, you save 10–15 points** .
-
-- **Microsoft Defender's persona-based licensing is a trap.** Flat Plan 2 coverage across all users is the most common overspend; persona-aligned mixes cut the Defender line **20–30%** . **License Plan 2 only for privileged users, developers, executives, and high-risk roles.**
-
-- **Tanium's entry price is six figures.** **$144,000/year for 1,500 endpoints** . **Do not evaluate without enterprise budget approval.**
-
-- **CrowdStrike Falcon Go is the most accessible commercial entry point**—$59.99/device/month, 100-device max, includes core EDR . **Pro and Enterprise add features but quadruple the per-device cost** .
-
-- **Wazuh Agent is the most complete open-source security agent**—FIM, vulnerability detection, active response, and compliance mapping . **The trade-off**: no kernel-level prevention; requires manager infrastructure.
-
-- **Velociraptor Agent is unmatched for DFIR**—VQL hunts across thousands of endpoints in minutes . **The trade-off**: not continuous EDR; requires expertise.
-
-- Self-hosted open-source solutions require proper infrastructure (manager servers, fleet management), security hardening, and ongoing maintenance. **Endpoint agents have deep system visibility**—ensure your deployment meets your organization's security and privacy requirements before installing on production endpoints.
-
-
 
 ---
 
+## Sector Overview & Market Dynamics
 
+The global endpoint security market is valued at approximately **$19.5B – $21.5B (2025/2026)** and is projected to expand at a **10.5% – 12.7% CAGR** toward $37B+ by the early 2030s. Structurally, the sector remains **moderately fragmented**: while a top tier of enterprise giants (Microsoft, CrowdStrike, Broadcom, SentinelOne, Sophos) captures massive enterprise spend through consolidated XDR and cloud-delivered security suites, thousands of specialized MDR providers, niche telemetry collectors, and regional compliance vendors continue to maintain substantial aggregate share.
+
+---
+
+## SaaS/Hosted Platforms
+
+| Product / Vendor | Company Size (Revenue / Valuation) | Starting Tier Pricing | Free Tier / Free Trial Limits | Key Features & Architecture | Supported Platforms |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Microsoft Defender for Endpoint** | **$3.1T+ Market Cap** (~$245B+ Annual Revenue; Security revenue >$20B) | **$3.00/user/month** (Plan 1 standalone) or **$5.20/user/month** (Plan 2 standalone); included in M365 E3/E5 suites | **90-day free trial**; covers up to **250 evaluation licenses** (up to 5 concurrent devices per user license) | Behavioral EDR, threat analytics, automated investigation, cloud native XDR integration | Windows, macOS, Linux, Android, iOS |
+| **Datadog Agent** | **$43B+ Market Cap** (~$2.6B+ Annual Revenue) | **$15.00/host/month** (Infrastructure Pro, annual commitment) | **Free tier available for up to 5 hosts** with 1-day metric data retention; full-feature trial for 14 days | Unified telemetry collection (metrics, traces, logs), eBPF network and runtime tracking | Linux, Windows, macOS, Docker, Kubernetes |
+| **CrowdStrike Falcon Agent** | **$75B+ Market Cap** (~$4.0B+ Annual Revenue) | **$59.99/device/month** (Falcon Go, billed annually, up to 100 devices); Pro at $99.99/device/month | **15-day free trial**; cloud-native sensor evaluation without reboots, up to test limits | Kernel-level sensor, real-time Threat Graph, AI prevention, minimal memory footprint | Windows (including legacy), Linux (ARM64, x86_64), macOS, ChromeOS (agentless) |
+| **Carbon Black Sensor** (Broadcom) | **Broadcom ($800B+ Market Cap)** (Enterprise Security division ~$5B+ rev) | **~$40.00 – $60.00/endpoint/year** (starting baseline estimate, typically quote-based with multi-year contract) | **90-day free trial** ("Try & Buy" POC via Broadcom Support Portal, 1 trial per corporate Site ID) | Kernel-level telemetry, continuous behavioral recording, attack chain visualization | Windows, macOS, Linux |
+| **SentinelOne Singularity Agent** | **$7.5B+ Market Cap** (~$800M+ Annual Revenue) | **$179.99/endpoint/year** (~$15.00/endpoint/month, Singularity Complete tier) | **30-day evaluation trial** (sales-managed Proof of Concept, typically up to 25–50 test endpoints) | Autonomous AI behavioral engine, automated ransomware rollback, integrated identity security | Windows (Server & Client), Linux (RHEL, Ubuntu, ARM64 Graviton), macOS |
+| **Elastic Agent** (Elastic Cloud) | **$9.0B+ Market Cap** (~$1.4B+ Annual Revenue) | **$95.00/month** (Elastic Cloud Standard starting cluster) or free self-managed open-source binary | **14-day free trial** on Elastic Cloud (provisioned with 8GB RAM, 240GB storage across AWS/GCP/Azure) | Unified shipper for Elastic Security & Observability, fleet management, built-in eBPF and Defend integration | Linux, Windows, macOS |
+| **Tanium Client** | **~$9.0B Valuation** (Private enterprise, ~$600M+ ARR) | **$8.00/endpoint/month** ($12,000/month minimum entry for 1,500 endpoints via Azure/AWS marketplace) | **30-day evaluation trial** (vendor-assisted Proof of Concept / Tanium Cloud POC environment) | Linear-chain peer-to-peer architecture, real-time fleet asset query, unified endpoint management and IR | Windows, macOS, Linux |
+| **Sophos Intercept X Agent** | **~$4.0B Valuation** (Private, Thoma Bravo subsidiary; ~$1.1B+ ARR) | **~$60.00/user/year** (~$5.00/user/month for Intercept X Advanced baseline) | **30-day free trial** with full functionality via Sophos Central, limited to 25–50 test endpoints | Deep learning malware detection, CryptoGuard anti-ransomware rollback, endpoint DLP | Windows, Windows Server, macOS, Linux |
+| **Trellix Endpoint Security Agent** | **~$2.5B Valuation** (Private, Symphony Technology Group; ~$1.5B+ ARR) | **~$40.00/endpoint/year** (~$3.33/endpoint/month starting baseline for ENS Essentials) | **60-day free trial**; defaults to **5 trial licenses** with full Adaptive Threat Protection & EDR features | Unified endpoint security suite (formerly McAfee/FireEye), host intrusion prevention, ePO management | Windows, macOS, Linux |
+| **Cybereason Sensor** | **~$1.0B Valuation** (Private, LevelBlue / SoftBank backed; ~$150M+ ARR) | **~$35.00 – $50.00/endpoint/year** (starting standalone quote estimate) | **14 to 30-day proof-of-concept (POC)** trial upon sales approval, scoped to designated evaluation endpoints | MalOp correlation engine, kernel-level behavioral monitoring, cross-machine attack hunting | Windows, macOS, Linux |
+
+---
+
+## Open-Source GitHub Projects
+
+Open-source endpoint agents allow self-hosted infrastructure, complete telemetry auditing, and independent rule writing without commercial lock-in.
+
+The table below is sorted in descending order by GitHub stargazer count:
+
+| Repository & Agent | GitHub Stars | Primary License | Architecture & Capabilities | Primary Use Case |
+| :--- | :--- | :--- | :--- | :--- |
+| [**osquery/osquery**](https://github.com/osquery/osquery) | [![GitHub stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | Apache-2.0 | Exposes the underlying OS as a high-performance relational database; execute SQL queries against processes, sockets, packages, and kernel modules | Real-time endpoint visibility, compliance auditing, and ad-hoc SQL telemetry queries |
+| [**wazuh/wazuh**](https://github.com/wazuh/wazuh) | [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | GPL-2.0 | Full host-based security agent with File Integrity Monitoring (FIM), vulnerability assessment, rootkit detection, and active automated remediation | End-to-end open-source EDR, compliance mapping (PCI DSS, HIPAA, CIS), and SIEM integration |
+| [**falcosecurity/falco**](https://github.com/falcosecurity/falco) | [![GitHub stars](https://img.shields.io/github/stars/falcosecurity/falco?style=social&color=white)](https://github.com/falcosecurity/falco/stargazers) | Apache-2.0 | Cloud-native runtime security agent and CNCF graduated project using modern eBPF probes and kernel modules to detect unexpected application behavior | Runtime threat detection and anomalous behavioral alerting on Linux hosts and Kubernetes nodes |
+| [**open-telemetry/opentelemetry-collector**](https://github.com/open-telemetry/opentelemetry-collector) | [![GitHub stars](https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social&color=white)](https://github.com/open-telemetry/opentelemetry-collector/stargazers) | Apache-2.0 | High-performance vendor-neutral proxy agent that receives, processes, filters, and exports endpoint telemetry (metrics, logs, traces) | Universal telemetry collection pipeline for hybrid cloud and server infrastructure |
+| [**fleetdm/fleet**](https://github.com/fleetdm/fleet) | [![GitHub stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers) | MIT | Open-source cross-platform fleet management agent and control plane based on osquery (`fleetd`); provides live queries, device policies, and vulnerability tracking | Large-scale osquery fleet orchestration, software inventory, and cross-platform MDM |
+| [**cilium/tetragon**](https://github.com/cilium/tetragon) | [![GitHub stars](https://img.shields.io/github/stars/cilium/tetragon?style=social&color=white)](https://github.com/cilium/tetragon/stargazers) | Apache-2.0 | Real-time eBPF-based security observability and runtime enforcement agent operating directly in the Linux kernel without context-switch overhead | Kernel-level process tracking, network connection tracking, and synchronous in-kernel blocking |
+| [**google/grr**](https://github.com/google/grr) | [![GitHub stars](https://img.shields.io/github/stars/google/grr?style=social&color=white)](https://github.com/google/grr/stargazers) | Apache-2.0 | Multi-platform incident response framework and remote live agent created by Google for enterprise digital forensics and remote live memory/disk triage | Scalable enterprise digital forensics, remote evidence triage, and incident response hunting |
+| [**ossec/ossec-hids**](https://github.com/ossec/ossec-hids) | [![GitHub stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers) | GPL-2.0 | Veteran host-based intrusion detection system (HIDS) performing log analysis, integrity checking, Windows registry monitoring, rootkit detection, and active response | Host intrusion detection, compliance file auditing, and server perimeter defense |
+| [**aquasecurity/tracee**](https://github.com/aquasecurity/tracee) | [![GitHub stars](https://img.shields.io/github/stars/aquasecurity/tracee?style=social&color=white)](https://github.com/aquasecurity/tracee/stargazers) | Apache-2.0 | Lightweight runtime security and forensics sensor powered by Linux eBPF; traces system calls, process lifecycles, and network flow with signature detection | Container and host runtime security, suspicious process detection, and malware behavioral tracing |
+| [**google/santa**](https://github.com/google/santa) | [![GitHub stars](https://img.shields.io/github/stars/google/santa?style=social&color=white)](https://github.com/google/santa/stargazers) | Apache-2.0 | Binary authorization system for macOS using an EndpointSecurity API system extension to enforce execution allowlists and denylists | Enforcing strict application control and binary authorization policies on macOS fleets |
+| [**velocidex/velociraptor**](https://github.com/velocidex/velociraptor) | [![GitHub stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers) | Apache-2.0 | Advanced endpoint interrogation, hunting, and digital forensics agent driven by the Velociraptor Query Language (VQL); capable of querying thousands of endpoints in seconds | DFIR investigations, rapid fleet-wide threat hunting, and targeted offline artifact collection |
+| [**grafana/alloy**](https://github.com/grafana/alloy) | [![GitHub stars](https://img.shields.io/github/stars/grafana/alloy?style=social&color=white)](https://github.com/grafana/alloy/stargazers) | Apache-2.0 | OpenTelemetry Collector distribution and flexible telemetry agent offering native Prometheus, OpenTelemetry, and Pyroscope pipeline processing | Unified endpoint and node telemetry shipper for metrics, logs, and continuous profiling |
+| [**ComodoSecurity/openedr**](https://github.com/ComodoSecurity/openedr) | [![GitHub stars](https://img.shields.io/github/stars/ComodoSecurity/openedr?style=social&color=white)](https://github.com/ComodoSecurity/openedr/stargazers) | GPL-3.0 | Dedicated open-source EDR sensor engine capable of deep event analysis, MITRE ATT&CK correlation, and real-time detection telemetry collection | Auditable open-source EDR engine for evaluating behavioral telemetry and endpoint detection algorithms |
+| [**elastic/elastic-agent**](https://github.com/elastic/elastic-agent) | [![GitHub stars](https://img.shields.io/github/stars/elastic/elastic-agent?style=social&color=white)](https://github.com/elastic/elastic-agent/stargazers) | Elastic-2.0 / SSPL | Centralized host telemetry agent managing Beats and Elastic Defend protections; integrates with Fleet Server for centralized policy distribution | Unified telemetry and host security event delivery into the Elastic SIEM stack |
+
+---
+
+### Suggested Open-Source Deployment Stacks
+
+- **Complete Open-Source EDR & SIEM**: Deploy [Wazuh Agent](https://github.com/wazuh/wazuh) alongside [Wazuh Server](https://github.com/wazuh/wazuh) for automated file integrity checks, compliance audits, and active responses.
+- **Fleet-Wide SQL Auditing & Inventory**: Deploy `fleetd` from [FleetDM](https://github.com/fleetdm/fleet) wrapping [osquery](https://github.com/osquery/osquery) for scheduled query packs and live vulnerability inspection.
+- **Enterprise DFIR & Threat Hunting**: Deploy [Velociraptor](https://github.com/velocidex/velociraptor) or [Google GRR](https://github.com/google/grr) for ad-hoc remote artifact retrieval, memory dumping, and multi-endpoint hunting.
+- **Modern Linux eBPF Security**: Run [Falco](https://github.com/falcosecurity/falco), [Tetragon](https://github.com/cilium/tetragon), or [Aqua Tracee](https://github.com/aquasecurity/tracee) for low-overhead kernel syscall tracing and container runtime protection.
+- **macOS Fleet Hardening**: Deploy [Google Santa](https://github.com/google/santa) to block untrusted executables directly through Apple's EndpointSecurity framework.
+
+---
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing tabular and detail formats).
+3. Include: name, link, star count badge, license (for open-source), company size / valuation (for SaaS), starting tier price, and free tier/trial limits.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+---
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Endpoint agents handling system telemetry must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls for collected data.
+- **The "prevention agent" vs. "detection agent" vs. "telemetry shipper" distinction is critical:**
+  - **CrowdStrike, SentinelOne, Defender, and Carbon Black** are **prevention agents**—they block threats at the kernel level.
+  - **Wazuh, OpenEDR, and Velociraptor** are **detection/investigation agents**—they collect and analyze, but typically do not halt execution at the kernel boundary out of the box.
+  - **Datadog Agent, Elastic Agent, Grafana Alloy, and OpenTelemetry Collector** are **telemetry shippers**—they collect observability and log data.
+- Self-hosted open-source solutions require proper infrastructure (manager servers, fleet management), security hardening, and ongoing maintenance. Ensure your deployment meets your organization's security and privacy requirements before installing on production endpoints.
+
+---
 
 **Made for security engineers, IT operations teams, and organizations building transparent endpoint agent solutions.**
-
-Let's make Endpoint Security Sensor & Agents more open, data-driven, and telemetry-aware.
